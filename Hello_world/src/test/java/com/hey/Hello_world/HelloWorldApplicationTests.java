@@ -12,5 +12,12 @@ public class HelloWorldApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
+	@Autowired
+	public HelloWorld helloworld;
+	@Test
+	public void test() {
+		String str=helloworld.home();
+		assertEquals(str,"Hello World");
+	}
 
 }
